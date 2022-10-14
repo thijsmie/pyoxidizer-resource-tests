@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "resource-tests"
+version = "0.0.1"
+description = ""
+authors = ["Thijs Miedema <thijs.miedema@zettascale.tech>"]
+packages = [
+    { include = "resource_tests", from = "src" }
+]
+include = ["src/resource_tests/test.txt","src/resource_tests/subdir/test.txt"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
